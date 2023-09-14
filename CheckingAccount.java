@@ -1,12 +1,22 @@
-package bank;
+public class CheckingAccount{
+  private String name;
+  private int balance;
+  private String id;
 
-public class CheckingAccount {
-  public String name;
-  public int balance;
-
-  public CheckingAccount(String inputName, int inputBalance){
+  public CheckingAccount(String inputName, int inputBalance, String inputId){
     name = inputName;
     balance = inputBalance;
+    id = inputId;
   }
-    
+
+  public int getBalance() {
+    return balance;
+  }
+
+  public void setBalance(int newBalance) {
+    balance = newBalance;
+  }
+
+  //Write new methods here:
+  
 }
