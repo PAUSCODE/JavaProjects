@@ -1,0 +1,8 @@
+class Usuario {
+    public int solicitarPiso() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese el piso al que desea ir (1-7): ");
+        int piso = scanner.nextInt();
+        return piso;
+    }
+}
