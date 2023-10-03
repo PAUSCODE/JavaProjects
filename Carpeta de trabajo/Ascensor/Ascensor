@@ -1,1 +1,27 @@
+public class Ascensor {
+  private int pisoActual;
+  public final int PISO_FINAL;
+  public final int PISO_INICIAL;
+ 
+// Constructor
 
+  public Ascensor (int final, int inicial){
+    PISO_FINAL=final;
+    PISO_INICIAL=inicial;
+    pisoActual=PISO_INICIAL;
+  }
+
+  public void subirPiso(){
+     pisoActual= pisoActual+1;
+  }
+
+  public void bajarPiso(){
+     pisoActual=pisoActual-1;
+  }
+  
+  public int getPisoActual (){
+      return pisoActual;
+  }
+
+
+}
