@@ -1,0 +1,8 @@
+public class TestAscensor {
+    public static void main (string [] args) {
+        Ascensor_ascensor = new Ascensor (max 7, min 1);
+        System.out.println (ascensor.getPisoActual());
+        
+    }
+
+}
