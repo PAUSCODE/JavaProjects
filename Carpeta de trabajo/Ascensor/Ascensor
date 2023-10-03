@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Ascensor {
   private int pisoActual;
   public final int PISO_MAXIMO;
