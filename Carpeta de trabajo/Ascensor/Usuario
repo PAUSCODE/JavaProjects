@@ -1,3 +1,6 @@
+import java.util.Random;
+import java.util.Scanner;
+
 class Usuario {
     public int solicitarPiso() {
         Scanner scanner = new Scanner(System.in);
@@ -5,4 +8,3 @@ class Usuario {
         int piso = scanner.nextInt();
         return piso;
     }
-}
