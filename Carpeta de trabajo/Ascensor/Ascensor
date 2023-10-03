@@ -5,27 +5,24 @@ public class Ascensor {
  
 // Constructor
 
-  public Ascensor (int max, int min){
-    PISO_MAXIMO=max;
-    PISO_MINIMO=min;
-    pisoActual= v;
-  }
+ public Ascensor(max 7, min 1) {
 
-  public void subirPiso(){
-     if (pisoActual<PISO_MAXIMO) {
-        pisoActual= pisoActual+1;
-      }  
+// Inicializar el piso actual de forma aleatoria entre 1 y 7.
+        Random random = new Random();
+        pisoActual = random.nextInt(7) + 1;
+    }
+
+    public int getPisoActual() {
+        return pisoActual;
+    }
+
+    public void moveTo(int pisoDestino) {
+        if (pisoDestino < 1 || pisoDestino > 7) {
+            System.out.println("Piso no válido. Saliendo del programa.");
+            System.exit(0);
+        }
+
+        pisoActual = pisoDestino;
+    }
 }
 
-  public void bajarPiso(){
-      if (pisoActual> PISO_MINIMO){
-        pisoActual=pisoActual-1;
-      }
-  }
-  
-  public int getPisoActual (){
-      return pisoActual;
-  }
-
-
-}
