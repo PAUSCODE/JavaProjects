@@ -1,0 +1,12 @@
+class VCilindro extends ACirculo {
+  private double altura;
+
+  public VCilindro (double r, double altura){
+      super (r);
+      this.altura = altura; 
+  }
+
+  public double calcularVCil(){
+    return calcularAreaC() * altura;
+  }
+}
