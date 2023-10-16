@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 public class Menu {
 	VEsfera objVEs;
+	VCilindro objVCil;
 	
 	public Menu(){
 	objVEs=new VEsfera();
+	objVCil=new VCilindro();
 	}
 	
 	public void menu (){
