@@ -10,6 +10,7 @@ public class Empleado extends Persona{
 
     public Empleado(double salario, String nombre) {
         super(nombre);
+        this.idEmpleado = ++Employee.contadorEmpleado;
         this.salario = salario;
     }
 
