@@ -15,9 +15,6 @@ public class TestHerencia {
         Employee empleado3 = new Employee("Juan", 5000);
         System.out.println(empleado3);
         
-        //Crear Clientes 
-        var fecha = new Date(); //Obtener la fecha de hoy 
-        Client cliente1 = new Client(fecha, true, "Suny", 'F', 18,"Santo tomas");
-        System.out.println(cliente1);        
+         
     }
 }
