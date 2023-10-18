@@ -8,27 +8,12 @@ public class Empleado extends Persona{
                        
 // para el static int no se requiere crear un objeto para modificar su valor             
 
-    public Empleado(String nombre) {
+    public Empleado(double salario, String nombre) {
         super(nombre);
-    }
-
-    public Empleado(int idEmpleado, double salario) {
-        this.idEmpleado = idEmpleado;
         this.salario = salario;
     }
 
-    public Empleado(int idEmpleado, double salario, String nombre) {
-        super(nombre);
-        this.idEmpleado = idEmpleado;
-        this.salario = salario;
-    }
-
-    public Empleado(int idEmpleado, double salario, String nombre, char genero, int edad, String direccion) {
-        super(nombre, genero, edad, direccion);
-        this.idEmpleado = idEmpleado;
-        this.salario = salario;
-    }
-
+        
     public int getIdEmpleado() {
         return idEmpleado;
     }
